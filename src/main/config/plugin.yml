@@ -1,0 +1,7 @@
+﻿name: welcome_plugin
+version: 1.0
+main: mc.stoneskin.welcomeplugin.MyWelcome
+author: stoneskin
+description: Add a mutiline Welcome Message on the server!
+
+
