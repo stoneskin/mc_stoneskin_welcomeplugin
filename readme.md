@@ -1,4 +1,4 @@
-# My Wecome plugin for bukkit/spigot mincraft server
+# My Wecome Message plugin for bukkit/spigot Minecraft server
 
 ## Feature
 
