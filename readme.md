@@ -10,8 +10,8 @@ I wrote the plugin because I can't find a simple welcome message plugin that sup
 
 - Could reload the config with command
   
-  `/welcome` to display the welcome message
-  `/welcome reload` to reload the welcome message
+  - `/welcome` to display the welcome message
+  - `/welcome reload` to reload the welcome message
 
 ------
 
@@ -39,8 +39,8 @@ for message color and format check [Minecraft Formatting code](https://minecraft
 
 ## Release
 
-[2020-07-10] *Release 1.0.1* [download welcome_plugin-1.0.jar](./release/welcome_plugin-1.0.1.jar)
-[2020-07-06] *Release 1.0* [download welcome_plugin-1.0.jar](./release/welcome_plugin-1.0.jar)
+- [2020-07-10] *Release 1.0.1* [download welcome_plugin-1.0.jar](./release/welcome_plugin-1.0.1.jar)
+- [2020-07-06] *Release 1.0* [download welcome_plugin-1.0.jar](./release/welcome_plugin-1.0.jar)
 
 ------
 
