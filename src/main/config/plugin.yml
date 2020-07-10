@@ -1,7 +1,10 @@
 ﻿name: welcome_plugin
-version: 1.0
-main: mc.stoneskin.welcomeplugin.MyWelcome
+version: 1.0.1
+main: mc.stoneskin.WelcomePlugin.MyWelcome
 author: stoneskin
 description: Add a mutiline Welcome Message on the server!
-
+commands:
+  welcome:
+      description: change config.yml to update the welcome message
+      usage: /<command> or /<command> reload
 
