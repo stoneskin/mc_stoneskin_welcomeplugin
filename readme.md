@@ -1,4 +1,4 @@
-# My Welcome plugin for bukkit/spigot Minecraft server
+# My Welcome Message plugin for bukkit/spigot Minecraft server
 
 ## Feature
 
