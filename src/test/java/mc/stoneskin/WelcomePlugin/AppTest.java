@@ -1,8 +1,6 @@
-package mc.stoneskin.welcomeplugin;
+package mc.stoneskin.WelcomePlugin;
 
 import static org.junit.Assert.assertTrue;
-
-import java.io.Console;
 
 import org.junit.Test;
 

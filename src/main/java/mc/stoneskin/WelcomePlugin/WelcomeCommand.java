@@ -7,6 +7,10 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class WelcomeCommand implements CommandExecutor {
+    private final MessageHelper _helper;
+    public WelcomeCommand(final MessageHelper helper) {
+        _helper = helper;
+    }
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         //return super.onCommand(sender, command, label, args);
@@ -17,12 +21,12 @@ public class WelcomeCommand implements CommandExecutor {
                 if(command.getName().equalsIgnoreCase("Welcome")) {
                     if(args.length > 0) {
                         if(args[0].equalsIgnoreCase("reload")){
-                            ConfigHelper.Instance().Reload();
+                            _helper.Reload();
                         }else{
                             sender.sendMessage("Invalid Command.");
                         }
                     }else {
-                        ConfigHelper.Instance().SendWelcomeMessages(player);
+                        _helper.SendWelcomeMessages(player);
                     }
                 }
             }

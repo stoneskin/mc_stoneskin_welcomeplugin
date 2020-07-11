@@ -1,24 +1,19 @@
 package mc.stoneskin.WelcomePlugin;
-import java.io.File;
-import java.io.IOException;
+
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
+
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
-public class ConfigHelper {
+public class MessageHelper {
 	//private File file;
 	private FileConfiguration config;
 	private Plugin plugin;
-	private static ConfigHelper helper = new ConfigHelper();
+		
 
-	public static ConfigHelper Instance() {
-		return helper;
-	}
-
-	public void init(Plugin plugin) {
+	public MessageHelper(final Plugin plugin) {
 		this.plugin = plugin;
 		config = plugin.getConfig();
 	}
@@ -28,8 +23,8 @@ public class ConfigHelper {
 		config = plugin.getConfig();
 	}
 
-	private String[] GetMessages(Player player) {
-		//todo, support message same in array
+	private String[] GetMessages(final Player player) {
+		// todo, support message same in array
 		String msg = config.getString("welcome.message");
 		if (msg != null) {
 			Bukkit.getServer().getLogger().info("Welcome msg loaded:" + msg);
@@ -38,17 +33,17 @@ public class ConfigHelper {
 			String lb = config.getString("welcome.linebreak");
 			if (lb == null)
 				lb = "\\n";
-			String[] s = msg.split(lb);
+			final String[] s = msg.split(lb);
 			return s;
 		}
-		return new String[]{};
+		return new String[] {};
 	}
 
-	public void SendWelcomeMessages(Player player) {
-		String[] msgs = GetMessages(player);
+	public void SendWelcomeMessages(final Player player) {
+		final String[] msgs = GetMessages(player);
 		if (msgs.length > 0) {
 
-			for (String m : msgs) {
+			for (final String m : msgs) {
 				player.sendMessage(m);
 			}
 
