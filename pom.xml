@@ -6,7 +6,7 @@
 
   <groupId>mc.stoneskin.WelcomePlugin</groupId>
   <artifactId>welcome_plugin</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 
   <name>MyWelcome</name>
   <!-- FIXME change it to the project's website -->

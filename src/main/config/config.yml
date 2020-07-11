@@ -1,3 +1,7 @@
 welcome:
     message: '&5Welcome, &r&2%p&r&5 to the Minecraft server! \n Enjoy~~'
+    messages: 
+        - '&3 section1'
+        - '&6 section2\ content....'
     linebreak: '\\n'
+    delay: 2
