@@ -8,11 +8,12 @@ I wrote the plugin because I can't find a simple welcome message plugin that sup
 
 ![screenshot](./screenshot.jpg)
 
-- Could reload the config with command
+- Could reload the config with command if have op permission
   
   - `/welcome` to display the welcome message
   - `/welcome reload` to reload the welcome message
 
+- support 1.16.1, 1.15.x and lower version.
 ------
 
 ## example of config.yml
@@ -37,10 +38,22 @@ for message color and format check [Minecraft Formatting code](https://minecraft
 
 ------
 
+## Installation
+
+Download the plugin jar file and put in the plugins folder,
+After the first run, you will see the \welcome_plugin\ folder in the plugins
+you could update the config.yml to change the welcome message.
+
+------
+
 ## Release
 
 - [2020-07-10] *Release 1.0.1* [download welcome_plugin-1.0.jar](./release/welcome_plugin-1.0.1.jar)
 - [2020-07-06] *Release 1.0* [download welcome_plugin-1.0.jar](./release/welcome_plugin-1.0.jar)
+
+## Other download source
+
+- download from [spigot](https://www.spigotmc.org/resources/welcome-message-plugin-support-multiple-lines.81206/)
 
 ------
 
