@@ -1,10 +1,23 @@
 ﻿name: welcome_plugin
-version: 1.0.1
+version: 1.0.2
 main: mc.stoneskin.WelcomePlugin.MyWelcome
 author: stoneskin
-description: Add a mutiline Welcome Message on the server!
+description: Add a multiple-lines Welcome Messages on the server!
+load: POSTWORLD
+prefix: WelcomePlugin
 commands:
   welcome:
-      description: change config.yml to update the welcome message
-      usage: /<command> or /<command> reload
+    permission: welcome_plugin.* 
+    description: Display the welcome message defined config.yml
+    usage: /<command> [reload]
+    permission-message: You do not have permission to use this command.
+
+
+permissions:
+  welcome_plugin.*:
+    description: Allows reload command
+    default: true
+  
+
+      
 

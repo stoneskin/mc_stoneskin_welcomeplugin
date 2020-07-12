@@ -8,12 +8,15 @@ I wrote the plugin because I can't find a simple welcome message plugin that sup
 
 ![screenshot](./screenshot.jpg)
 
-- Could reload the config with command if have op permission
+- Could display the welcome message, and Op could reload the config 
   
   - `/welcome` to display the welcome message
-  - `/welcome reload` to reload the welcome message
+  - `/welcome reload` to reload the welcome message, (need op)
 
 - support 1.16.1, 1.15.x and lower version.
+- support multiple message sections
+- support delay display message sections.
+  
 ------
 
 ## example of config.yml
@@ -23,13 +26,12 @@ config.yml could be find in `\plugins\welcome_plugin\`
 ```yml
 #config.yml
 welcome:
-    message: '&5Welcome, &r&2%p&r&5 to the &bMC &5server!\n
-&6*** Server Rules ***\n
-&f 1. No Griefing!\n
-&f 2. No repeat command blocks!\n
-&l&eObey the rule and &aEnjoy&e or you will be &cBanned&e.'
-
+    message: '&5Welcome, &r&2%p&r&5 to the Minecraft server! \n Enjoy~~'
+    messages:
+        - '&3 section1'
+        - '&6 section2\ content....'
     linebreak: '\\n'
+    delay: 2
 ```
 
 for message color and format check [Minecraft Formatting code](https://minecraft.gamepedia.com/Formatting_codes).
@@ -47,8 +49,8 @@ you could update the config.yml to change the welcome message.
 ------
 
 ## Release
-
-- [2020-07-10] *Release 1.0.1* [download welcome_plugin-1.0.jar](./release/welcome_plugin-1.0.1.jar)
+- [2020-07-11] *Release 1.0.2* [downlaod welcome_plugin-1.0.2.jar](https://www.spigotmc.org/resources/welcome-message-plugin-support-multiple-lines.81206/download?version=343643)
+- [2020-07-10] *Release 1.0.1* [download welcome_plugin-1.0.1.jar](./release/welcome_plugin-1.0.1.jar)
 - [2020-07-06] *Release 1.0* [download welcome_plugin-1.0.jar](./release/welcome_plugin-1.0.jar)
 
 ## Other download source

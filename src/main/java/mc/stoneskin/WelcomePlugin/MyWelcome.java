@@ -8,7 +8,7 @@ public class MyWelcome extends JavaPlugin {
         final MessageHelper helper = new MessageHelper(this);
        
 		this.getServer().getPluginManager().registerEvents(new PlayerJoinListener(helper), this);
-        this.getCommand("Welcome").setExecutor(new WelcomeCommand(helper));
+        this.getCommand("welcome").setExecutor(new WelcomeCommand(helper));
 		this.getLogger().fine("MyWelcome Plugin Activated!");
     
 

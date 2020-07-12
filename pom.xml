@@ -10,13 +10,14 @@
 
   <name>MyWelcome</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://stoneskin.github.io/mc_stoneskin_welcomeplugin/</url>
   <repositories>
       <!-- This adds the Spigot Maven repository to the build -->
       <repository>
           <id>spigot-repo</id>
           <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
       </repository>
+
   </repositories>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
